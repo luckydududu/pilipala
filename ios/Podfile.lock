@@ -20,9 +20,6 @@ PODS:
   - fluttertoast (0.0.2):
     - Flutter
     - Toast
-  - FMDB (2.7.5):
-    - FMDB/standard (= 2.7.5)
-  - FMDB/standard (2.7.5)
   - gt3_flutter_plugin (0.0.9):
     - Flutter
     - GT3Captcha-iOS
@@ -48,7 +45,7 @@ PODS:
     - Flutter
   - sqflite (0.0.3):
     - Flutter
-    - FMDB (>= 2.7.5)
+    - FlutterMacOS
   - status_bar_control (3.2.1):
     - Flutter
   - system_proxy (0.0.1):
@@ -86,7 +83,7 @@ DEPENDENCIES:
   - saver_gallery (from `.symlinks/plugins/saver_gallery/ios`)
   - screen_brightness_ios (from `.symlinks/plugins/screen_brightness_ios/ios`)
   - share_plus (from `.symlinks/plugins/share_plus/ios`)
-  - sqflite (from `.symlinks/plugins/sqflite/ios`)
+  - sqflite (from `.symlinks/plugins/sqflite/darwin`)
   - status_bar_control (from `.symlinks/plugins/status_bar_control/ios`)
   - system_proxy (from `.symlinks/plugins/system_proxy/ios`)
   - url_launcher_ios (from `.symlinks/plugins/url_launcher_ios/ios`)
@@ -97,7 +94,6 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - FMDB
     - GT3Captcha-iOS
     - Toast
 
@@ -143,7 +139,7 @@ EXTERNAL SOURCES:
   share_plus:
     :path: ".symlinks/plugins/share_plus/ios"
   sqflite:
-    :path: ".symlinks/plugins/sqflite/ios"
+    :path: ".symlinks/plugins/sqflite/darwin"
   status_bar_control:
     :path: ".symlinks/plugins/status_bar_control/ios"
   system_proxy:
@@ -160,38 +156,37 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/webview_flutter_wkwebview/ios"
 
 SPEC CHECKSUMS:
-  appscheme: b1c3f8862331cb20430cf9e0e4af85dbc1572ad8
-  audio_service: f509d65da41b9521a61f1c404dd58651f265a567
-  audio_session: 4f3e461722055d21515cf3261b64c973c062f345
-  auto_orientation: 102ed811a5938d52c86520ddd7ecd3a126b5d39d
-  connectivity_plus: ddd7f30999e1faaef5967c23d5b6d503d10434db
-  device_info_plus: c6fb39579d0f423935b0c9ce7ee2f44b71b9fce6
+  appscheme: d1cf187ffe3bba230f327535e004044b021d14d8
+  audio_service: 2023a4a1bdb2fd1443e7b00bdbdb1baa321525db
+  audio_session: f08db0697111ac84ba46191b55488c0563bb29c6
+  auto_orientation: a1600c9ed72e6e96982fb4e1214463343342432a
+  connectivity_plus: 2256d3e20624a7749ed21653aafe291a46446fee
+  device_info_plus: 335f3ce08d2e174b9fdc3db3db0f4e3b1f66bd89
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
-  flutter_mailer: 2ef5a67087bc8c6c4cefd04a178bf1ae2c94cd83
-  flutter_volume_controller: e4d5832f08008180f76e30faf671ffd5a425e529
-  fluttertoast: 31b00dabfa7fb7bacd9e7dbee580d7a2ff4bf265
-  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  gt3_flutter_plugin: 5bd2c08d3c19cbb6ee3b08f4358439e54c8ab2ee
+  flutter_mailer: 3a8cd4f36c960fb04528d5471097270c19fec1c4
+  flutter_volume_controller: c2be490cb0487e8b88d0d9fc2b7e1c139a4ebccb
+  fluttertoast: 76fea30fcf04176325f6864c87306927bd7d2038
+  gt3_flutter_plugin: 37090e5fa66ff2a52939eb9d208fc36fa49d36e5
   GT3Captcha-iOS: 5e3b1077834d8a9d6f4d64a447a30af3e14affe6
-  media_kit_libs_ios_video: a5fe24bc7875ccd6378a0978c13185e1344651c1
-  media_kit_native_event_loop: e6b2ab20cf0746eb1c33be961fcf79667304fa2a
-  media_kit_video: 5da63f157170e5bf303bf85453b7ef6971218a2e
-  package_info_plus: 115f4ad11e0698c8c1c5d8a689390df880f47e85
-  path_provider_foundation: 2b6b4c569c0fb62ec74538f866245ac84301af46
-  permission_handler_apple: 9878588469a2b0d0fc1e048d9f43605f92e6cec2
-  saver_gallery: 2b4e584106fde2407ab51560f3851564963e6b78
-  screen_brightness_ios: 715ca807df953bf676d339f11464e438143ee625
-  share_plus: c3fef564749587fc939ef86ffb283ceac0baf9f5
-  sqflite: 31f7eba61e3074736dff8807a9b41581e4f7f15a
-  status_bar_control: 7c84146799e6a076315cc1550f78ef53aae3e446
-  system_proxy: bec1a5c5af67dd3e3ebf43979400a8756c04cc44
+  media_kit_libs_ios_video: 5a18affdb97d1f5d466dc79988b13eff6c5e2854
+  media_kit_native_event_loop: 5fba1a849a6c87a34985f1e178a0de5bd444a0cf
+  media_kit_video: 1746e198cb697d1ffb734b1d05ec429d1fcd1474
+  package_info_plus: 566e1b7a2f3900e4b0020914ad3fc051dcc95596
+  path_provider_foundation: 080d55be775b7414fd5a5ef3ac137b97b097e564
+  permission_handler_apple: 4ed2196e43d0651e8ff7ca3483a069d469701f2d
+  saver_gallery: de9ec9ee1f186f5168e757ec1fdffab8ad21d89a
+  screen_brightness_ios: 5ed898fa50fa82a26171c086ca5e28228f932576
+  share_plus: de6030e33b4e106470e09322d87cf2a4258d2d1d
+  sqflite: c35dad70033b8862124f8337cc994a809fcd9fa3
+  status_bar_control: fe3e1813ad6f09b5e06271df7e0e1e35fd356461
+  system_proxy: df8f85da9db052f93da22ceb2a8f87b3058c2eb3
   Toast: ec33c32b8688982cecc6348adeae667c1b9938da
-  url_launcher_ios: 5334b05cef931de560670eeae103fd3e431ac3fe
-  volume_controller: 531ddf792994285c9b17f9d8a7e4dcdd29b3eae9
-  wakelock_plus: 78ec7c5b202cab7761af8e2b2b3d0671be6c4ae1
-  webview_cookie_manager: eaf920722b493bd0f7611b5484771ca53fed03f7
-  webview_flutter_wkwebview: be0f0d33777f1bfd0c9fdcb594786704dbf65f36
+  url_launcher_ios: 694010445543906933d732453a59da0a173ae33d
+  volume_controller: ca1cde542ee70fad77d388f82e9616488110942b
+  wakelock_plus: fd58c82b1388f4afe3fe8aa2c856503a262a5b03
+  webview_cookie_manager: d63a76cabdf42a7ea3d92768ac67d4853a1367f8
+  webview_flutter_wkwebview: 45a041c7831641076618876de3ba75c712860c6b
 
 PODFILE CHECKSUM: 637cd290bed23275b5f5ffcc7eb1e73d0a5fb2be
 
-COCOAPODS: 1.14.3
+COCOAPODS: 1.16.2

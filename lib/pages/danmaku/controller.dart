@@ -55,7 +55,7 @@ class PlDanmakuController {
   List<DanmakuElem>? getCurrentDanmaku(int progress) {
     int segmentIndex = calcSegment(progress);
     if (!requestedSeg[segmentIndex]) {
-      queryDanmaku(segmentIndex);
+      // queryDanmaku(segmentIndex);
     }
     return dmSegMap[progress ~/ 100];
   }
